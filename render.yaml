@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: krishi-mitra
+    runtime: node
+    plan: free
+    buildCommand: npm ci --include=dev && npm run build
+    startCommand: npm run start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: ALLOW_MEMORY_DB
+        value: "true"
+      - key: MONGODB_URI
+        sync: false
+      - key: FRONTEND_URL
+        sync: false

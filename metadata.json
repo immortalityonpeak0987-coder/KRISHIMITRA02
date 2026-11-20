@@ -1,0 +1,6 @@
+{
+  "name": "KRISHI-MITRA — Smart Agriculture & Allied Sector Monitoring System",
+  "description": "Smart Agriculture & Allied Sector Monitoring System providing weather, soil moisture, crop health, and recovery guidance for Indian farmers.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
